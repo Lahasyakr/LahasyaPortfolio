@@ -6,14 +6,14 @@ const projects = [
         id: 1,
         title: 'Collaborative Segmentation Software',
         image: '/images/annotate-sync.gif',
-        description: 'A browser-based online annotation tool for 3D medical image volumes that allow annotations to be shared between users.',
+        description: 'In Collaboration with Massachusetts General Hospital developed a browser-based online annotation tool for 3D medical image volumes that allow annotations to be shared between users.',
         link: 'https://github.com/oopsuwu/Collaborative-Segmentation-Software/blob/main/README.md',
     },
     {
         id: 2,
         title: 'CryptoLib',
         image: "/images/cryptolib.png",
-        description: 'Encryption and Decryption - RSA, AES, and Base64 encode and decode using Javascript',
+        description: 'In collaboration with Atsign Company developed a Library for - RSA, AES, Encryption and Decryption, and Base64 encode and decode using Javascript.',
         link: 'https://github.com/Lahasyakr/CS682-Project4b/blob/main/README.md',
     },
     {
