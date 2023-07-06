@@ -35,10 +35,11 @@ const App = () => {
       <aside className="sidebar">
         <img className="profile-image" src="lahasyaprofile.jpeg" alt="Profile" />
         <h1 className="name">Lahasya K Rajanna</h1>
+        <p align="center">
+        <small>Software Engineer, Boston, MA </small><br/>
+        <small>University of Massachusetts | Ex-Marlabs | Ex-Infosys</small></p>
 
-        <h6>Software Engineer, Boston, MA | University of Massachusetts | Ex-Marlabs | Ex-Infosys</h6>
-
-        <p align="left">
+        <p align="center">
           <a href="mailto:lahasyakr.07@gmail.com" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="lahasyak,r.07" height="25" width="35" /></a>
           <a href="https://twitter.com/lahasyakr" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="lahasyakr" height="30" width="40" /></a>
           <a href="https://www.linkedin.com/in/lahasyarajanna/
