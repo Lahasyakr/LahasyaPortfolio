@@ -45,7 +45,7 @@ const App = () => {
           <a href="https://www.linkedin.com/in/lahasyarajanna/
 "target="blank"><img align="center" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" alt="lahasya k r" height="30" width="40" /></a>
           <a href="https://instagram.com/lahasyak.r" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="lahasyak,r" height="30" width="40" /></a>
-          <a href="https://www.leetcode.com/lahasya" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="lahasya" height="30" width="40" /></a>
+          <a href="https://lahasyakr.github.io/Lahasyakr/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="lahasya" height="30" width="40" /></a>
         </p>
 
 
