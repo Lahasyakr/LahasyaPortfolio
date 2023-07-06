@@ -1,0 +1,57 @@
+import { FiExternalLink } from 'react-icons/fi';
+
+
+const projects = [
+    {
+        id: 1,
+        title: 'Collaborative Segmentation Software',
+        image: '/images/annotate-sync.gif',
+        description: 'A browser-based online annotation tool for 3D medical image volumes that allow annotations to be shared between users.',
+        link: 'https://github.com/oopsuwu/Collaborative-Segmentation-Software/blob/main/README.md',
+    },
+    {
+        id: 2,
+        title: 'CryptoLib',
+        image: "/images/cryptolib.png",
+        description: 'Encryption and Decryption - RSA, AES, and Base64 encode and decode using Javascript',
+        link: 'https://github.com/Lahasyakr/CS682-Project4b/blob/main/README.md',
+    },
+    {
+        id:3,
+        title:"Shared DrawingApp",
+        image: "/images/sharedDrawing.png",
+        description: 'Real Time Shared Drawing Application using React + (express + socket.io)',
+        link: 'https://github.com/Lahasyakr/Shared_DrawingApp',
+    }
+    // Add more projects as needed
+];
+
+const Projects = () => {
+    return (
+        <>
+            <section id="projects" className="projects-section">
+                <h2>Projects</h2>
+                <div className="projects-list">
+                    {projects.map((project, index) => (
+                        <div key={index} className="project">
+                            <div className="project-details">
+                                <h3>{project.title}</h3>
+                            </div>
+                            <img src={project.image} alt={project.title} />
+                            <div className="project-details">
+                                <p>{project.description}</p>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                    Visit Project <FiExternalLink />
+                                </a>
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+        </>
+    )
+};
+
+export default Projects;
