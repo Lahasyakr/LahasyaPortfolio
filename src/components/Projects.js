@@ -5,21 +5,21 @@ const projects = [
     {
         id: 1,
         title: 'Collaborative Segmentation Software',
-        image: '/images/annotate-sync.gif',
+        image: 'annotate-sync.gif',
         description: 'In Collaboration with Massachusetts General Hospital developed a browser-based online annotation tool for 3D medical image volumes that allow annotations to be shared between users.',
         link: 'https://github.com/oopsuwu/Collaborative-Segmentation-Software/blob/main/README.md',
     },
     {
         id: 2,
         title: 'CryptoLib',
-        image: "/images/cryptolib.png",
+        image: "cryptolib.png",
         description: 'In collaboration with Atsign Company developed a Library for - RSA, AES, Encryption and Decryption, and Base64 encode and decode using Javascript.',
         link: 'https://github.com/Lahasyakr/CS682-Project4b/blob/main/README.md',
     },
     {
         id:3,
         title:"Shared DrawingApp",
-        image: "/images/sharedDrawing.png",
+        image: "sharedDrawing.png",
         description: 'Real Time Shared Drawing Application using React + (express + socket.io)',
         link: 'https://github.com/Lahasyakr/Shared_DrawingApp',
     }

@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div className="app">
       <aside className="sidebar">
-        <img className="profile-image" src="/images/lahasyaprofile.jpeg" alt="Profile" />
+        <img className="profile-image" src="lahasyaprofile.jpeg" alt="Profile" />
         <h1 className="name">Lahasya K Rajanna</h1>
 
         <h6>Software Engineer, Boston, MA | University of Massachusetts | Ex-Marlabs | Ex-Infosys</h6>
