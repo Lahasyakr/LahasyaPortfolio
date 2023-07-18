@@ -1,8 +1,23 @@
 import { SiInfosys } from "react-icons/si";
-import {MdWorkHistory} from "react-icons/md";
+import { MdWorkHistory } from "react-icons/md";
+import { FaUserGraduate } from "react-icons/fa";
 
+const projectlink = <a href="#projects">Projects</a>;
 const workExperience = [
-
+    {
+        company: 'University of Massachusetts Boston',
+        duration: 'Sep 2022 - Present',
+        position: 'Graduate Student',
+        location: "Boston, MA",
+        description: "As a Computer Science (CS) graduate student, I embarked on a journey of advanced learning and research within the field. During this period, I engaged in various academic and practical experiences. These opportunities not only expanded my knowledge but also honed my skills,enabling me to make meaningful contributions to numerous impactful projects.",
+        logo: FaUserGraduate, // Replace with the actual logo file name
+        /*  projects: [
+             {
+                 projectName: 'Academic Projects',
+                 description: 'Please click here' + projectlink,
+             },
+         ], */
+    },
     {
         company: 'Marlabs Innovations Pvt. Ltd',
         location: 'Bangalore, India',
@@ -61,7 +76,7 @@ const WorkExperience = () => {
 
                         <div key={index} >
                             <div className='work-experience-logo '><div className="work-logo">
-                                <experience.logo size={'2em'}/>
+                                <experience.logo size={'2em'} />
                                 {/* <img src={experience.logo} alt={experience.company} /> */}
                             </div></div>
                             <div className="work-experience">
@@ -71,7 +86,7 @@ const WorkExperience = () => {
                                     <p>{experience.location}</p>
 
                                     <p>{experience.description}</p>
-                                    {experience.projects.map((project, projectIndex) => (
+                                    {experience.projects?.map((project, projectIndex) => (
                                         <div key={projectIndex} className="work-project">
                                             <h4 className="work-project-name">{project.projectName}</h4>
                                             <p className="work-project-technology">

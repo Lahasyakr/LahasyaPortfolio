@@ -1,8 +1,9 @@
 /* App.css */
 body {
-  max-width: 90%;
   margin: 0;
+  max-width: 90%;
   font-family: Arial, sans-serif;
+  background-color: white;
 }
 
 .app {
@@ -10,39 +11,81 @@ body {
 }
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 10%;
-  width: 15%;
-  background-color: #74808af9;
+  margin-left: 10%;
+  background-color: #bdc3c7;
   color: black;
   padding: 20px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+ 
+  align-items: center !important;
+  z-index: 1;
 }
 
 .profile-image {
-  width: 120px;
+  width: auto;
   height: 120px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
-
 .name {
   margin: 0;
-  font-size: larger;
+  font-size: 25px;
 }
 
 .navigation {
+  margin-top: 20px;
+  font-size: medium;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.content {
+  margin-left: 35%;
+  padding: 20px;
+}
+
+.ant-menu-item-selected {
+  background-color: rgb(0, 172, 238) !important;
+  color: white !important;
+}
+
+.ant-menu-item {
+  color: black !important;
+}
+
+.ant-menu-item a {
+  color: black !important;
+}
+
+.ant-menu-item a:hover {
+  color: white !important;
+}
+
+.ant-menu-vertical .ant-menu-item::after {
+  border-right: none;
+}
+
+
+
+@media screen and (max-width: 860px) {
+  .sidebar {
+    width: 100% !important;
+    z-index: 1;
+    margin-left: 0%;
+  }
+
+  .content {
+    margin-left: 20%;
+  }
+
+  .name {
+    margin: 0;
+    font-size: larger;
+  }
+}
 .navigation a.active {
-  color: #3498db;
+  color: #3498db !important;
   font-weight: bold;
 }
 
@@ -53,11 +96,11 @@ body {
   text-decoration: none;
 }
 
-.content {
+/* .content {
   margin-left: 35%;
   padding: 20px;
 }
-
+ */
 .about-section {
   padding-top: 20px;
 }
@@ -96,13 +139,13 @@ body {
 
 
 .activities-content p {
-  color: rgb(155, 126, 172);
+  color: rgb(0, 172, 238);
   font-size: 1rem;
   margin-bottom: 15px;
 }
 
 .activities-content p a {
-  color: rgba(62, 9, 93, 0.685);
+  color: rgb(0, 172, 238);
   text-decoration: none;
 }
 
@@ -116,7 +159,7 @@ body {
   padding: 2em;
   text-align: left;
   margin-top: 20px;
-  background-color: #74808af9;
+  background-color: #bdc3c7;
   align-items: center;
   color: black;
 }

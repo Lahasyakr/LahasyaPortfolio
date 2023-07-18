@@ -21,19 +21,19 @@ const About = () => {
                     <div className="activities-content">
                         <p>
                             <ImPointRight /> &nbsp;
-                              <a href="https://www.instagram.com/traveltoplaces_/">You can see my travel adventures <BsInstagram /></a>
+                              <a href="https://www.instagram.com/traveltoplaces_/" title="Instagram">You can see my travel adventures <BsInstagram /></a>
                         </p>
                     </div>
                     <div className="contact-info">
-                        <a href="images/Lahasya_resume.pdf" className="resume-link" targer="_blank" download >RESUME</a>
+                        <a href="images/Lahasya_resume.pdf" className="resume-link" targer="_blank" title="Click here to download" download >RESUME</a>
                         <p>
                             <FaEnvelope className="icon" />
-                            <strong><a style={{ textDecoration: "none", color: "black" }} href="mailto:lahasyakr.07@gmail.com" target="blank">lahasyakr.07@gmail.com</a></strong>
+                            <strong><a style={{ textDecoration: "none", color: "black" }} href="mailto:lahasyakr.07@gmail.com" target="blank" title="Email">lahasyakr.07@gmail.com</a></strong>
                         </p>
 
                         <p>
                             <FaEnvelope className="icon" />
-                            <strong><a style={{ textDecoration: "none", color: "black" }} href="mailto:lahasya.lnu001@gmail.com" target="blank">lahasya.lnu001@gmail.com</a></strong>
+                            <strong><a style={{ textDecoration: "none", color: "black" }} href="mailto:lahasya.lnu001@gmail.com" target="blank" title="Email">lahasya.lnu001@gmail.com</a></strong>
                         </p>
                         <p>
                             <FaPhoneAlt className="icon" />

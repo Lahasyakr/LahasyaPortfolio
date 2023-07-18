@@ -1,9 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import About from "./components/About"
-import Projects from "./components/Projects"
-import Skills from "./components/Skills"
+import { Layout, Menu, Avatar } from 'antd';
+import {
+  MailOutlined,
+  TwitterOutlined,
+  LinkedinOutlined,
+  InstagramOutlined,
+  GithubOutlined,
+  MailFilled,
+} from '@ant-design/icons';
+
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 import WorkExperience from './components/WorkExperience';
+
+const { Header, Sider, Content } = Layout;
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -17,7 +29,10 @@ const App = () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
-        if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight) {
+        if (
+          window.scrollY >= sectionTop - 50 &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
           currentSection = section.id;
         }
       });
@@ -29,54 +44,85 @@ const App = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-
   return (
     <div className="app">
-      <aside className="sidebar">
-        <img className="profile-image" src="lahasyaprofile.jpeg" alt="Profile" />
-        <h1 className="name">Lahasya K Rajanna</h1>
-        <p align="center">
-        <small>Software Engineer, Boston, MA </small><br/>
-        <small>University of Massachusetts | Ex-Marlabs | Ex-Infosys</small></p>
+      <Layout style={{ backgroundColor: "white" }}>
+        <Sider className="sidebar"
+          breakpoint="lg"
+          style={{
+            backgroundColor: "#bdc3c7",
+            position: 'fixed',
+            left: 0,
+            top: 0,
+            bottom: 0,
+            alignItems: "center"
+          }}
+          collapsedWidth="0"
+          width={280}
+          onBreakpoint={(broken) => {
+            console.log(broken);
+          }}
+          onCollapse={(collapsed, type) => {
+            console.log(collapsed, type);
+          }}>
+          <div align="center" className="profile-image" style={{ align: "center !important" }}>
+            <Avatar src="lahasyaprofile.jpeg" alt="Profile" size={120} />
+          </div>
+          <h1 align="center" className="name">Lahasya K Rajanna</h1>
+          <p align="center">
+            <small>Software Engineer, Boston, MA </small>
+            <br />
+            <small>University of Massachusetts | Ex-Marlabs | Ex-Infosys</small>
+          </p>
 
-        <p align="center">
-          <a href="mailto:lahasyakr.07@gmail.com" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="lahasyak,r.07" height="25" width="35" /></a>
-          <a href="https://twitter.com/lahasyakr" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="lahasyakr" height="30" width="40" /></a>
-          <a href="https://www.linkedin.com/in/lahasyarajanna/
-"target="blank"><img align="center" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" alt="lahasya k r" height="30" width="40" /></a>
-          <a href="https://instagram.com/lahasyak.r" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="lahasyak,r" height="30" width="40" /></a>
-          <a href="https://lahasyakr.github.io/Lahasyakr/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="lahasya" height="30" width="40" /></a>
-        </p>
+          <p align="center">
+            <a href="mailto:lahasyakr.07@gmail.com" target="blank" title='Email'>
+              <MailFilled className="icon" twoToneColor="#000000" style={{ fontSize: 25, color: "black" }} />
+            </a>
+            <a href="https://twitter.com/lahasyakr" target="blank" title='Twitter'>
+              <TwitterOutlined className="icon" style={{ fontSize: 25, color: "#00acee" }} />
+            </a>
+            <a href="https://www.linkedin.com/in/lahasyarajanna/" target="blank" title='LinkedIn'>
+              <LinkedinOutlined className="icon" style={{ fontSize: 25, color: "#0A66C2" }} />
+            </a>
+            <a href="https://instagram.com/lahasyak.r" target="blank" title='Instagram '>
+              <InstagramOutlined className="icon" style={{ fontSize: 25, color: "#bc2a8d" }} />
+            </a>
+            <a href="https://lahasyakr.github.io/Lahasyakr/" target="blank" title='GitHub' >
+              <GithubOutlined className="icon" style={{ fontSize: 25, color: "black" }} />
+            </a>
+          </p>
 
+          <Menu
+            className="navigation"
+            style={{ backgroundColor: "#bdc3c7", alignItems: "center" }}
+            mode="inline"
+            selectable={false}
 
-
-
-        <nav className="navigation">
-          <a className={activeSection === 'about' ? 'active' : ''} href="#about">
-            About
-          </a>
-          <a className={activeSection === 'skills' ? 'active' : ''} href="#skills">
-            Skills
-          </a>
-          <a className={activeSection === 'projects' ? 'active' : ''} href="#projects">
-            Projects
-          </a>
-          <a className={activeSection === 'work-experience' ? 'active' : ''} href="#work-experience">
-            Work Experience
-          </a>
-        </nav>
-      </aside>
-
-      <main className="content">
+          >
+            <Menu.Item key="about">
+              <a className={activeSection === 'about' ? 'active' : ''} href="#about">About</a>
+            </Menu.Item>
+            <Menu.Item key="skills">
+              <a className={activeSection === 'skills' ? 'active' : ''} href="#skills">Skills</a>
+            </Menu.Item>
+            <Menu.Item key="projects">
+              <a className={activeSection === 'projects' ? 'active' : ''} href="#projects">Projects</a>
+            </Menu.Item>
+            <Menu.Item key="work-experience">
+              <a className={activeSection === 'work-experience' ? 'active' : ''} href="#work-experience">Work Experience</a>
+            </Menu.Item>
+          </Menu>
+        </Sider>
+      </Layout>
+      <div className="content">
         <About />
         <Skills />
         <Projects />
         <WorkExperience />
+      </div>
 
 
-
-
-      </main>
     </div>
   );
 };
