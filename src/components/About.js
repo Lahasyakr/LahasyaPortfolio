@@ -33,7 +33,7 @@ const About = () => {
 
                         <p>
                             <FaEnvelope className="icon" />
-                            <strong><a style={{ textDecoration: "none", color: "black" }} href="mailto:lahasya.lnu001@gmail.com" target="blank" title="Email">lahasya.lnu001@gmail.com</a></strong>
+                            <strong><a style={{ textDecoration: "none", color: "black" }} href="mailto:lahasya.lnu001@umb.edu" target="blank" title="Email">lahasya.lnu001@umb.edu</a></strong>
                         </p>
                         <p>
                             <FaPhoneAlt className="icon" />
