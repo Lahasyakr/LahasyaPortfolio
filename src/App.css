@@ -4,6 +4,7 @@ body {
   max-width: 90%;
   font-family: Arial, sans-serif;
   background-color: white;
+  line-height: 1.5rem;
 }
 
 .app {
@@ -447,6 +448,13 @@ body {
 }
 .work-project p{
   margin-left: 20px;
+}
+.exp-desc{
+  line-height: 1.5rem!important;
+}
+.work-project-nameProj{
+  text-decoration: underline;
+  margin-bottom:-5px;
 }
 
 
