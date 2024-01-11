@@ -6,7 +6,7 @@ const projectlink = <a href="#projects">Projects</a>;
 const workExperience = [
     {
         company: 'University of Massachusetts Boston',
-        duration: 'Sep 2022 - Present',
+        duration: 'Sep 2022 - Dec 2023',
         position: 'Graduate Student',
         location: "Boston, MA",
         description: "As a Computer Science (CS) graduate student, I embarked on a journey of advanced learning and research within the field. During this period, I engaged in various academic and practical experiences. These opportunities not only expanded my knowledge but also honed my skills,enabling me to make meaningful contributions to numerous impactful projects.",
@@ -28,19 +28,19 @@ const workExperience = [
         projects: [
             {
                 projectName: 'MYSITE',
-                technology: 'React Js, Visual Studio 2008',
+                technology: 'React Js, Liquid Design,REST API, Jest, Enzymes, PostMan, JSDoc, Visual Studio 2008',
                 description: 'Web app developing with react and redux. It\'s a tool for the capturing of site observations, along with zone details and all necessary info.',
                 role: 'Developed responsive UI for web app using React Js using TypeScript for better quality and involved myself with unit testing of the UI code.',
             },
             {
                 projectName: 'Sustainable Business Value',
-                technology: 'React Js, Visual Studio 2008',
+                technology: 'React Js, Liquid Design,REST API, Jest, Enzymes, PostMan, JSDoc, Visual Studio 2008',
                 description: 'SBV- Sustainable business value(web app using react with typescript) This tool supports you in computing the SBV(SBV is a collection of measures and assessments—not a single metric, and has a positive correlation with Total Shareholder Return)',
                 role: 'Built a responsive UI for web app using React Js using TypeScript for better quality and involved myself with unit testing of the UI code. Published a SonarQube report with good code coverage and minimal duplication of code and with zero code smells.',
             },
             {
                 projectName: 'On Demand Knowledge',
-                technology: 'React Js, Visual Studio 2008',
+                technology: 'React Js, Liquid Design,REST API, Jest, Enzymes, PostMan, JSDoc, Visual Studio 2008',
                 description: 'ODK- Learning platform (web app using React (type script)) Which maintains the assignment and allocation of learning material.',
                 role: 'Handled the team with good planning and right decision for the development. Developed responsive UI for web app using React Js using TypeScript for better quality and involved myself with unit testing of the UI code. Published a SonarQube report with good code coverage and minimal duplication of code and with zero code smells.',
             },
@@ -56,13 +56,13 @@ const workExperience = [
         projects: [
             {
                 projectName: 'CADRE Application',
-                technology: 'React Js, CSS, HTML5, Bootstrap, SQLServer 2016, Visual Studio 2008',
+                technology: 'React Js, CSS, HTML5, Bootstrap, SQLServer 2016,NodeJs, Ant-design, Visual Studio 2008',
                 description: 'CADRE consists of a web app for company managers to create, edit, and monitor trips for employees and candidates. It includes a dashboard to view all created trips. It also includes a mobile app to help employees and candidates monitor their trips and settle their expenses.',
                 role: 'Developed entire responsive UI for web app using React Js, which included complex UX design. Consumed web services through AJAX calls to display results in the required format and used React libraries to enhance the UI.',
             },
             {
                 projectName: 'Agile Integration Broker',
-                technology: 'AngularJs, SQL',
+                technology: 'AngularJs, SQL, NodeJs, ',
                 description: 'project involved the development of an internal tool to manage deployment requests and defect tracking.',
                 role: 'Contributed to an internal tool for deployment requests and defect tracking using AngularJs and SQL Server, reducing manual deployment tracker time by more than 50%.',
             }
@@ -104,7 +104,7 @@ const WorkExperience = () => {
                                                 <strong style={{ color: "grey" }}>Role:</strong> {project.role}
                                             </p>
                                             <p className="work-project-technology">
-                                                <strong style={{ color: "grey" }}>Technology:</strong> {project.technology}
+                                                <strong style={{ color: "grey" }}>Technology/Tools:</strong> {project.technology}
                                             </p>
                                         </ol>
                                     ))}
