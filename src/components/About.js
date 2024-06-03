@@ -15,7 +15,7 @@ const About = () => {
                             👋🏻
                         </span>
                     </h3>
-                    <p>I am a Software Engineer with 6 years of experience in architecting and developing large-scale front-end applications using different technologies. I love to create beautiful and interactive websites that deliver a great user experience. I have a  <b>Master's degeree in Computer science from University of massachusetts, Boston.</b></p>
+                    <p>I am a Software Engineer with 7+ years of experience in architecting and developing large-scale front-end applications using different technologies. I love to create beautiful and interactive websites that deliver a great user experience. I have a  <b>Master's degeree in Computer science from University of massachusetts, Boston.</b></p>
                     <p>Throughout my career, I have worked on various projects, collaborating with talented teams to build innovative solutions. My goal is to continue learning and growing as a developer, always staying up-to-date with the latest technologies and best practices.</p>
                     <p>When I'm not coding, you can find me exploring new hiking trails, experimenting in the kitchen, or visiting new places.</p>
                     <div className="activities-content">
